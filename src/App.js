@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 import Person from './components/Person/Person';
+import FunctionalComponent from './components/functional-component/functional-component';
+import InlineStylesComponent from './components/inline-styles/inline-styles';
 
 class App extends Component {
   constructor() {
@@ -35,6 +37,8 @@ class App extends Component {
             {person.description}
           </Person>
         ))}
+        <FunctionalComponent></FunctionalComponent>
+        <InlineStylesComponent></InlineStylesComponent>
       </div>
     );
   }
