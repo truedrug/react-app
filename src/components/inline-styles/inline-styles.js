@@ -1,5 +1,5 @@
 import React from 'react';
-import './inline-styles.css';
+import styles from './inline-styles.css';
 
 export default function InlineStyles() {
   const countries = [
@@ -16,7 +16,7 @@ export default function InlineStyles() {
   };
 
   return (
-    <div className="parent-div">
+    <div className={styles.parentDiv}>
       <p style={hardcodedStyles}>This line supports hardcoded inline styling</p>
       <ul>
         {countries.map(country => (
